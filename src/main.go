@@ -15,7 +15,7 @@ func main() {
 		fmt.Print("Enter number: ")
 		fmt.Scan(&number)
 		
-		if number >= 1 && number <= 100 {
+		if number >= 1 && number <= 150 {
 			if number < guessNumber{
 				fmt.Println("Number is small")
 			}
