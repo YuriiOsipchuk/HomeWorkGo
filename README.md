@@ -31,5 +31,5 @@ git merge manager
 ```Text
 Implementation game Guess number.
 - min number equal 1
-- max number equal 100
+- max number equal 150
 ```
