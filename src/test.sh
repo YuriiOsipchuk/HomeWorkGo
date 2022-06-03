@@ -9,7 +9,7 @@ if [[ -f $FILENAME ]]; then
 	go build main.go
 
 	if [[ -f $PROGRAMNAME ]]; then
-		echo {1..10} | ./main
+		echo {1..150} | ./main
 	else
 		exit 1
 	fi
@@ -19,4 +19,7 @@ else
 	exit 1
 fi
 
+if [[ -f $PROGRAMNAME ]]; then
+	rm $PROGRAMNAME
+fi
 echo "***** END Test:   **********";

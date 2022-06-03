@@ -25,7 +25,7 @@ func main() {
 			}
 
 			if number == guessNumber{
-				fmt.Println("Success")
+				fmt.Printf("Success: %v\n", guessNumber)
 			}
 		} else {
 			fmt.Println("Number incorrect")
