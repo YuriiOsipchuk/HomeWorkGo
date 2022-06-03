@@ -15,7 +15,7 @@ func main() {
 		fmt.Print("Enter number: ")
 		fmt.Scan(&number)
 		
-		if number >= 1 && number <= 100 {
+		if number >= 1 && number <= 150 {
 			if number < guessNumber{
 				fmt.Println("Number is small")
 			}
@@ -25,7 +25,7 @@ func main() {
 			}
 
 			if number == guessNumber{
-				fmt.Println("Success")
+				fmt.Printf("Success: %v\n", guessNumber)
 			}
 		} else {
 			fmt.Println("Number incorrect")
