@@ -24,4 +24,12 @@ git status
 git add README.md
 git add .
 git commit -m "Start project"
+git merge manager
+```
+
+## Task:
+```Text
+Implementation game Guess number.
+- min number equal 1
+- max number equal 100
 ```
