@@ -3,32 +3,32 @@ package main
 import "fmt"
 
 func main() {
-	var number int
-	var guessNumber int
+  var number int
+  var guessNumber int
 
-	guessNumber = 51
+  guessNumber = 51
 
-	// fmt.Printf("guessNumber = %v\n", guessNumber)
-	// fmt.Printf("number = %v\n", number)
+  // fmt.Printf("guessNumber = %v\n", guessNumber)
+  // fmt.Printf("number = %v\n", number)
 
-	for number != guessNumber {
-		fmt.Print("Enter number: ")
-		fmt.Scan(&number)
-		
-		if number >= 1 && number <= 150 {
-			if number < guessNumber{
-				fmt.Println("Number is small")
-			}
+  for number != guessNumber {
+    fmt.Print("Enter number: ")
+    fmt.Scan(&number)
+    
+    if number >= 1 && number <= 150 {
+      if number < guessNumber{
+        fmt.Println("Number is small")
+      }
 
-			if number > guessNumber{
-				fmt.Println("Number is big")
-			}
+      if number > guessNumber{
+        fmt.Println("Number is big")
+      }
 
-			if number == guessNumber{
-				fmt.Printf("Success: %v\n", guessNumber)
-			}
-		} else {
-			fmt.Println("Number incorrect")
-		}
-	}
+      if number == guessNumber{
+        fmt.Printf("Success: %v\n", guessNumber)
+      }
+    } else {
+      fmt.Println("Number incorrect")
+    }
+  }
 }
